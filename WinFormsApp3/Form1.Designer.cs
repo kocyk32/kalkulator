@@ -42,9 +42,9 @@
             bdodawanie = new Button();
             bodejmowanie = new Button();
             bmnozenie = new Button();
-            label1 = new Label();
-            panel1 = new Panel();
-            panel1.SuspendLayout();
+            wynik = new Label();
+            kalkulator = new Panel();
+            kalkulator.SuspendLayout();
             SuspendLayout();
             // 
             // bwynik
@@ -55,6 +55,7 @@
             bwynik.TabIndex = 4;
             bwynik.Text = "=";
             bwynik.UseVisualStyleBackColor = true;
+            bwynik.Click += bwynik_Click;
             // 
             // b9
             // 
@@ -64,6 +65,7 @@
             b9.TabIndex = 6;
             b9.Text = "9";
             b9.UseVisualStyleBackColor = true;
+            b9.Click += b9_Click;
             // 
             // b6
             // 
@@ -73,6 +75,7 @@
             b6.TabIndex = 7;
             b6.Text = "6";
             b6.UseVisualStyleBackColor = true;
+            b6.Click += b6_Click;
             // 
             // b3
             // 
@@ -82,6 +85,7 @@
             b3.TabIndex = 8;
             b3.Text = "3";
             b3.UseVisualStyleBackColor = true;
+            b3.Click += b3_Click;
             // 
             // b8
             // 
@@ -101,6 +105,7 @@
             b5.TabIndex = 11;
             b5.Text = "5";
             b5.UseVisualStyleBackColor = true;
+            b5.Click += b5_Click;
             // 
             // b2
             // 
@@ -110,6 +115,7 @@
             b2.TabIndex = 12;
             b2.Text = "2";
             b2.UseVisualStyleBackColor = true;
+            b2.Click += b2_Click;
             // 
             // b7
             // 
@@ -129,6 +135,7 @@
             b4.TabIndex = 15;
             b4.Text = "4";
             b4.UseVisualStyleBackColor = true;
+            b4.Click += b4_Click;
             // 
             // b1
             // 
@@ -138,6 +145,7 @@
             b1.TabIndex = 16;
             b1.Text = "1";
             b1.UseVisualStyleBackColor = true;
+            b1.Click += b1_Click;
             // 
             // bdzielenie
             // 
@@ -147,6 +155,7 @@
             bdzielenie.TabIndex = 21;
             bdzielenie.Text = "÷";
             bdzielenie.UseVisualStyleBackColor = true;
+            bdzielenie.Click += bdzielenie_Click;
             // 
             // bdodawanie
             // 
@@ -156,6 +165,7 @@
             bdodawanie.TabIndex = 20;
             bdodawanie.Text = "+";
             bdodawanie.UseVisualStyleBackColor = true;
+            bdodawanie.Click += bdodawanie_Click;
             // 
             // bodejmowanie
             // 
@@ -165,6 +175,7 @@
             bodejmowanie.TabIndex = 19;
             bodejmowanie.Text = "-";
             bodejmowanie.UseVisualStyleBackColor = true;
+            bodejmowanie.Click += bodejmowanie_Click;
             // 
             // bmnozenie
             // 
@@ -174,48 +185,51 @@
             bmnozenie.TabIndex = 18;
             bmnozenie.Text = "x";
             bmnozenie.UseVisualStyleBackColor = true;
+            bmnozenie.Click += bmnozenie_Click;
             // 
-            // label1
+            // wynik
             // 
-            label1.Location = new Point(44, 29);
-            label1.Name = "label1";
-            label1.Size = new Size(114, 48);
-            label1.TabIndex = 22;
-            label1.Text = "WYNIK:";
-            label1.TextAlign = ContentAlignment.TopCenter;
-            label1.Click += label1_Click;
+            wynik.ForeColor = SystemColors.ActiveCaptionText;
+            wynik.Location = new Point(44, 29);
+            wynik.Name = "wynik";
+            wynik.Size = new Size(114, 48);
+            wynik.TabIndex = 22;
+            wynik.Text = "WYNIK:";
+            wynik.TextAlign = ContentAlignment.TopCenter;
+            wynik.UseMnemonic = false;
+            wynik.Click += label1_Click;
             // 
-            // panel1
+            // kalkulator
             // 
-            panel1.Controls.Add(b5);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(bwynik);
-            panel1.Controls.Add(bdzielenie);
-            panel1.Controls.Add(b9);
-            panel1.Controls.Add(bdodawanie);
-            panel1.Controls.Add(b6);
-            panel1.Controls.Add(bodejmowanie);
-            panel1.Controls.Add(b3);
-            panel1.Controls.Add(bmnozenie);
-            panel1.Controls.Add(b8);
-            panel1.Controls.Add(b1);
-            panel1.Controls.Add(b2);
-            panel1.Controls.Add(b4);
-            panel1.Controls.Add(b7);
-            panel1.Location = new Point(298, 144);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(200, 229);
-            panel1.TabIndex = 23;
+            kalkulator.Controls.Add(b5);
+            kalkulator.Controls.Add(wynik);
+            kalkulator.Controls.Add(bwynik);
+            kalkulator.Controls.Add(bdzielenie);
+            kalkulator.Controls.Add(b9);
+            kalkulator.Controls.Add(bdodawanie);
+            kalkulator.Controls.Add(b6);
+            kalkulator.Controls.Add(bodejmowanie);
+            kalkulator.Controls.Add(b3);
+            kalkulator.Controls.Add(bmnozenie);
+            kalkulator.Controls.Add(b8);
+            kalkulator.Controls.Add(b1);
+            kalkulator.Controls.Add(b2);
+            kalkulator.Controls.Add(b4);
+            kalkulator.Controls.Add(b7);
+            kalkulator.Location = new Point(298, 144);
+            kalkulator.Name = "kalkulator";
+            kalkulator.Size = new Size(200, 229);
+            kalkulator.TabIndex = 23;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
+            Controls.Add(kalkulator);
             Name = "Form1";
             Text = "Form1";
-            panel1.ResumeLayout(false);
+            kalkulator.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -234,7 +248,7 @@
         private Button bdodawanie;
         private Button bodejmowanie;
         private Button bmnozenie;
-        private Label label1;
-        private Panel panel1;
+        private Label wynik;
+        private Panel kalkulator;
     }
 }
