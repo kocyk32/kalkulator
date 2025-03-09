@@ -44,26 +44,27 @@
             bmnozenie = new Button();
             wynik = new Label();
             kalkulator = new Panel();
-            clear = new Button();
             b0 = new Button();
+            clear = new Button();
             kalkulator.SuspendLayout();
             SuspendLayout();
             // 
             // bwynik
             // 
-            bwynik.Location = new Point(134, 80);
+            bwynik.BackColor = Color.FromArgb(192, 255, 192);
+            bwynik.Location = new Point(75, 200);
             bwynik.Name = "bwynik";
-            bwynik.Size = new Size(24, 23);
+            bwynik.Size = new Size(25, 29);
             bwynik.TabIndex = 4;
             bwynik.Text = "=";
-            bwynik.UseVisualStyleBackColor = true;
+            bwynik.UseVisualStyleBackColor = false;
             bwynik.Click += bwynik_Click;
             // 
             // b9
             // 
-            b9.Location = new Point(104, 80);
+            b9.Location = new Point(75, 108);
             b9.Name = "b9";
-            b9.Size = new Size(24, 23);
+            b9.Size = new Size(25, 29);
             b9.TabIndex = 6;
             b9.Text = "9";
             b9.UseVisualStyleBackColor = true;
@@ -71,9 +72,9 @@
             // 
             // b6
             // 
-            b6.Location = new Point(104, 109);
+            b6.Location = new Point(75, 137);
             b6.Name = "b6";
-            b6.Size = new Size(24, 23);
+            b6.Size = new Size(25, 29);
             b6.TabIndex = 7;
             b6.Text = "6";
             b6.UseVisualStyleBackColor = true;
@@ -81,9 +82,9 @@
             // 
             // b3
             // 
-            b3.Location = new Point(104, 143);
+            b3.Location = new Point(75, 171);
             b3.Name = "b3";
-            b3.Size = new Size(24, 23);
+            b3.Size = new Size(25, 29);
             b3.TabIndex = 8;
             b3.Text = "3";
             b3.UseVisualStyleBackColor = true;
@@ -91,9 +92,9 @@
             // 
             // b8
             // 
-            b8.Location = new Point(74, 80);
+            b8.Location = new Point(46, 108);
             b8.Name = "b8";
-            b8.Size = new Size(24, 23);
+            b8.Size = new Size(25, 29);
             b8.TabIndex = 10;
             b8.Text = "8";
             b8.UseVisualStyleBackColor = true;
@@ -101,9 +102,9 @@
             // 
             // b5
             // 
-            b5.Location = new Point(74, 109);
+            b5.Location = new Point(45, 137);
             b5.Name = "b5";
-            b5.Size = new Size(24, 23);
+            b5.Size = new Size(25, 29);
             b5.TabIndex = 11;
             b5.Text = "5";
             b5.UseVisualStyleBackColor = true;
@@ -111,9 +112,9 @@
             // 
             // b2
             // 
-            b2.Location = new Point(74, 143);
+            b2.Location = new Point(46, 171);
             b2.Name = "b2";
-            b2.Size = new Size(24, 23);
+            b2.Size = new Size(25, 29);
             b2.TabIndex = 12;
             b2.Text = "2";
             b2.UseVisualStyleBackColor = true;
@@ -121,9 +122,9 @@
             // 
             // b7
             // 
-            b7.Location = new Point(44, 80);
+            b7.Location = new Point(15, 108);
             b7.Name = "b7";
-            b7.Size = new Size(24, 23);
+            b7.Size = new Size(25, 29);
             b7.TabIndex = 14;
             b7.Text = "7";
             b7.UseVisualStyleBackColor = true;
@@ -131,9 +132,9 @@
             // 
             // b4
             // 
-            b4.Location = new Point(44, 109);
+            b4.Location = new Point(15, 137);
             b4.Name = "b4";
-            b4.Size = new Size(24, 23);
+            b4.Size = new Size(25, 29);
             b4.TabIndex = 15;
             b4.Text = "4";
             b4.UseVisualStyleBackColor = true;
@@ -141,9 +142,9 @@
             // 
             // b1
             // 
-            b1.Location = new Point(44, 143);
+            b1.Location = new Point(15, 171);
             b1.Name = "b1";
-            b1.Size = new Size(24, 23);
+            b1.Size = new Size(25, 29);
             b1.TabIndex = 16;
             b1.Text = "1";
             b1.UseVisualStyleBackColor = true;
@@ -151,58 +152,64 @@
             // 
             // bdzielenie
             // 
-            bdzielenie.Location = new Point(134, 109);
+            bdzielenie.BackColor = Color.FromArgb(192, 255, 255);
+            bdzielenie.Location = new Point(105, 108);
             bdzielenie.Name = "bdzielenie";
-            bdzielenie.Size = new Size(24, 23);
+            bdzielenie.Size = new Size(25, 29);
             bdzielenie.TabIndex = 21;
             bdzielenie.Text = "÷";
-            bdzielenie.UseVisualStyleBackColor = true;
+            bdzielenie.UseVisualStyleBackColor = false;
             bdzielenie.Click += bdzielenie_Click;
             // 
             // bdodawanie
             // 
-            bdodawanie.Location = new Point(104, 172);
+            bdodawanie.BackColor = Color.FromArgb(192, 255, 255);
+            bdodawanie.Location = new Point(105, 171);
             bdodawanie.Name = "bdodawanie";
-            bdodawanie.Size = new Size(24, 23);
+            bdodawanie.Size = new Size(25, 29);
             bdodawanie.TabIndex = 20;
             bdodawanie.Text = "+";
-            bdodawanie.UseVisualStyleBackColor = true;
+            bdodawanie.UseVisualStyleBackColor = false;
             bdodawanie.Click += bdodawanie_Click;
             // 
             // bodejmowanie
             // 
-            bodejmowanie.Location = new Point(134, 172);
+            bodejmowanie.BackColor = Color.FromArgb(192, 255, 255);
+            bodejmowanie.Location = new Point(105, 200);
             bodejmowanie.Name = "bodejmowanie";
-            bodejmowanie.Size = new Size(24, 23);
+            bodejmowanie.Size = new Size(25, 29);
             bodejmowanie.TabIndex = 19;
             bodejmowanie.Text = "-";
-            bodejmowanie.UseVisualStyleBackColor = true;
+            bodejmowanie.UseVisualStyleBackColor = false;
             bodejmowanie.Click += bodejmowanie_Click;
             // 
             // bmnozenie
             // 
-            bmnozenie.Location = new Point(134, 143);
+            bmnozenie.BackColor = Color.FromArgb(192, 255, 255);
+            bmnozenie.Location = new Point(105, 137);
             bmnozenie.Name = "bmnozenie";
-            bmnozenie.Size = new Size(24, 23);
+            bmnozenie.Size = new Size(25, 29);
             bmnozenie.TabIndex = 18;
             bmnozenie.Text = "x";
-            bmnozenie.UseVisualStyleBackColor = true;
+            bmnozenie.UseVisualStyleBackColor = false;
             bmnozenie.Click += bmnozenie_Click;
             // 
             // wynik
             // 
+            wynik.BackColor = SystemColors.ButtonHighlight;
             wynik.ForeColor = SystemColors.ActiveCaptionText;
-            wynik.Location = new Point(44, 29);
+            wynik.Location = new Point(11, 25);
             wynik.Name = "wynik";
-            wynik.Size = new Size(114, 48);
+            wynik.Size = new Size(132, 55);
             wynik.TabIndex = 22;
-            wynik.Text = "WYNIK:";
-            wynik.TextAlign = ContentAlignment.TopCenter;
+            wynik.Text = "WYNIK";
+            wynik.TextAlign = ContentAlignment.MiddleCenter;
             wynik.UseMnemonic = false;
             wynik.Click += label1_Click;
             // 
             // kalkulator
             // 
+            kalkulator.BackColor = SystemColors.ActiveBorder;
             kalkulator.Controls.Add(b0);
             kalkulator.Controls.Add(clear);
             kalkulator.Controls.Add(b5);
@@ -222,34 +229,36 @@
             kalkulator.Controls.Add(b7);
             kalkulator.Location = new Point(1, 1);
             kalkulator.Name = "kalkulator";
-            kalkulator.Size = new Size(200, 229);
+            kalkulator.Size = new Size(167, 258);
             kalkulator.TabIndex = 23;
-            // 
-            // clear
-            // 
-            clear.Location = new Point(44, 172);
-            clear.Name = "clear";
-            clear.Size = new Size(24, 23);
-            clear.TabIndex = 23;
-            clear.Text = "C";
-            clear.UseVisualStyleBackColor = true;
-            clear.Click += button1_Click_1;
+            kalkulator.Paint += kalkulator_Paint;
             // 
             // b0
             // 
-            b0.Location = new Point(74, 172);
+            b0.Location = new Point(45, 200);
             b0.Name = "b0";
-            b0.Size = new Size(24, 23);
+            b0.Size = new Size(25, 29);
             b0.TabIndex = 24;
             b0.Text = "0";
             b0.UseVisualStyleBackColor = true;
             b0.Click += button1_Click_2;
             // 
+            // clear
+            // 
+            clear.BackColor = Color.IndianRed;
+            clear.Location = new Point(15, 200);
+            clear.Name = "clear";
+            clear.Size = new Size(25, 29);
+            clear.TabIndex = 23;
+            clear.Text = "C";
+            clear.UseVisualStyleBackColor = false;
+            clear.Click += button1_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(199, 229);
+            ClientSize = new Size(152, 242);
             Controls.Add(kalkulator);
             Name = "Form1";
             Text = "Form1";

@@ -2,9 +2,9 @@ namespace WinFormsApp3
 {
     public partial class Form1 : Form
     {
-        string currentInput = " ";
+        string currentInput = "";
         double result = 0;
-        string operation = " ";
+        string operation = "";
         bool operationPending = false;
         public Form1()
         {
@@ -163,7 +163,9 @@ namespace WinFormsApp3
 
         private void button1_Click_2(object sender, EventArgs e)
         {
-
+            Button button = (Button)sender;
+            currentInput += button.Text;
+            wynik.Text = currentInput;
         }
         private void Obliczenia()
         {
@@ -201,5 +203,9 @@ namespace WinFormsApp3
             }
         }
 
+        private void kalkulator_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
