@@ -44,14 +44,16 @@
             bmnozenie = new Button();
             wynik = new Label();
             kalkulator = new Panel();
+            clear = new Button();
+            b0 = new Button();
             kalkulator.SuspendLayout();
             SuspendLayout();
             // 
             // bwynik
             // 
-            bwynik.Location = new Point(44, 172);
+            bwynik.Location = new Point(134, 80);
             bwynik.Name = "bwynik";
-            bwynik.Size = new Size(84, 23);
+            bwynik.Size = new Size(24, 23);
             bwynik.TabIndex = 4;
             bwynik.Text = "=";
             bwynik.UseVisualStyleBackColor = true;
@@ -149,7 +151,7 @@
             // 
             // bdzielenie
             // 
-            bdzielenie.Location = new Point(134, 80);
+            bdzielenie.Location = new Point(134, 109);
             bdzielenie.Name = "bdzielenie";
             bdzielenie.Size = new Size(24, 23);
             bdzielenie.TabIndex = 21;
@@ -159,7 +161,7 @@
             // 
             // bdodawanie
             // 
-            bdodawanie.Location = new Point(134, 172);
+            bdodawanie.Location = new Point(104, 172);
             bdodawanie.Name = "bdodawanie";
             bdodawanie.Size = new Size(24, 23);
             bdodawanie.TabIndex = 20;
@@ -169,7 +171,7 @@
             // 
             // bodejmowanie
             // 
-            bodejmowanie.Location = new Point(134, 143);
+            bodejmowanie.Location = new Point(134, 172);
             bodejmowanie.Name = "bodejmowanie";
             bodejmowanie.Size = new Size(24, 23);
             bodejmowanie.TabIndex = 19;
@@ -179,7 +181,7 @@
             // 
             // bmnozenie
             // 
-            bmnozenie.Location = new Point(134, 109);
+            bmnozenie.Location = new Point(134, 143);
             bmnozenie.Name = "bmnozenie";
             bmnozenie.Size = new Size(24, 23);
             bmnozenie.TabIndex = 18;
@@ -201,6 +203,8 @@
             // 
             // kalkulator
             // 
+            kalkulator.Controls.Add(b0);
+            kalkulator.Controls.Add(clear);
             kalkulator.Controls.Add(b5);
             kalkulator.Controls.Add(wynik);
             kalkulator.Controls.Add(bwynik);
@@ -216,16 +220,36 @@
             kalkulator.Controls.Add(b2);
             kalkulator.Controls.Add(b4);
             kalkulator.Controls.Add(b7);
-            kalkulator.Location = new Point(298, 144);
+            kalkulator.Location = new Point(1, 1);
             kalkulator.Name = "kalkulator";
             kalkulator.Size = new Size(200, 229);
             kalkulator.TabIndex = 23;
+            // 
+            // clear
+            // 
+            clear.Location = new Point(44, 172);
+            clear.Name = "clear";
+            clear.Size = new Size(24, 23);
+            clear.TabIndex = 23;
+            clear.Text = "C";
+            clear.UseVisualStyleBackColor = true;
+            clear.Click += button1_Click_1;
+            // 
+            // b0
+            // 
+            b0.Location = new Point(74, 172);
+            b0.Name = "b0";
+            b0.Size = new Size(24, 23);
+            b0.TabIndex = 24;
+            b0.Text = "0";
+            b0.UseVisualStyleBackColor = true;
+            b0.Click += button1_Click_2;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(199, 229);
             Controls.Add(kalkulator);
             Name = "Form1";
             Text = "Form1";
@@ -250,5 +274,7 @@
         private Button bmnozenie;
         private Label wynik;
         private Panel kalkulator;
+        private Button clear;
+        private Button b0;
     }
 }
